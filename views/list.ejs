@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Todo List </title>
+</head>
+<body>
+
+     <h1> <%= kindOfDay %> </h1>
+
+          
+     <h1> Types of food </h1>    
+
+     <ul>
+          <li> Suny side up</li>
+          <li> Eggs and beckon</li>
+          <li> Porridge</li>
+          
+          <%  for (let i = 0; i < kindOfFoods.length; i++) { %>
+               <li><%= kindOfFoods[i] %></li>
+          <% } %>
+     </ul>
+
+
+     <form class="" action="/" method="post">
+
+          <input type="text" name="newItem">
+
+          <button type="submit" name="button"> Add</button>
+     </form>
+
+</body>
+</html>
